@@ -1,9 +1,11 @@
 import angular from 'angular';
 
-angular.module('app', []).controller('HelloWorldCtrl', function ($scope) {
-  $scope.message = 'Hello from Angular!';
-});
+angular.module('app', []);
 
-angular.element(function() {
-  angular.bootstrap(document.getElementById('angularApp'), ['app']);
+await import('@/app.controller');
+
+angular.element(function () {
+  angular.bootstrap(document.getElementById('angularApp'), ['app'], {
+    strictDi: true,
+  });
 });

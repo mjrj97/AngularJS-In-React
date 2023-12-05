@@ -7,7 +7,7 @@ function AngularApp() {
 
   return (
     <div id='angularApp'>
-      <span ng-controller='HelloWorldCtrl'>{'{{message}}'}</span>
+      <span ng-controller='AppController'>{'{{message}}'}</span>
     </div>
   );
 }
