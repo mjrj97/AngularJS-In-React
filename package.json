@@ -15,6 +15,6 @@
   "scripts": {
     "start": "vite --open",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview --open"
   }
 }

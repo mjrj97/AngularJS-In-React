@@ -1,25 +1,12 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 function AngularApp() {
-  const appRef = useRef(null);
-
-  // https://stackoverflow.com/questions/34424845/adding-script-tag-to-react-jsx
   useEffect(() => {
-    const script = document.createElement('script');
-
-    script.src = '/src/app.module.js';
-    script.type = 'module';
-    script.async = true;
-
-    appRef.current.appendChild(script);
-
-    return () => {
-      appRef.current.removeChild(script);
-    };
+    import('@/app.module.js');
   }, []);
 
   return (
-    <div ref={appRef} ng-app='app'>
+    <div ng-app='app'>
       <span ng-controller='HelloWorldCtrl'>{'{{message}}'}</span>
     </div>
   );
