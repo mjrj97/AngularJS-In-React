@@ -6,7 +6,7 @@ function AngularApp() {
   }, []);
 
   return (
-    <div ng-app='app'>
+    <div id='angularApp'>
       <span ng-controller='HelloWorldCtrl'>{'{{message}}'}</span>
     </div>
   );
