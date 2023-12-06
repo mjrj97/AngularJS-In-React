@@ -1,8 +1,6 @@
 import angular from 'angular';
 
-AppController.$inject = [
-  '$scope',
-];
+AppController.$inject = ['$scope'];
 
 function AppController($scope) {
   $scope.message = 'Hello from Angular!';

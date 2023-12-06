@@ -1,12 +1,15 @@
 import React, { useEffect } from 'react';
+import mountAngular from '@/app.module.js';
 
 function AngularApp() {
+  const id = "angularApp";
+
   useEffect(() => {
-    import('@/app.module.js');
+    mountAngular(id);
   }, []);
 
   return (
-    <div id='angularApp'>
+    <div id={id}>
       <span ng-controller='AppController'>{'{{message}}'}</span>
     </div>
   );
