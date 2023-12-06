@@ -1,13 +1,15 @@
 import angular from 'angular';
 
-angular.module('app', []);
+export async function prepareAngular() {
+  angular.module('app', []);
 
-await import('@/app.controller');
+  await import('@/app.controller');
+}
 
-export default (id) => {
+export function mountAngular(id) {
   angular.element(function () {
     angular.bootstrap(document.getElementById(id), ['app'], {
       strictDi: true,
     });
   });
-};
+}

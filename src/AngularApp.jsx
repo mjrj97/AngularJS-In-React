@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import mountAngular from '@/app.module.js';
+import { mountAngular } from '@/app.module.js';
 
 function AngularApp() {
-  const id = "angularApp";
+  const id = 'angularApp';
 
   useEffect(() => {
     mountAngular(id);
