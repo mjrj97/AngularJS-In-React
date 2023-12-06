@@ -5,7 +5,7 @@ import { Routes, Route, Link, BrowserRouter, Navigate } from 'react-router-dom';
 import AngularApp from './AngularApp';
 import ReactApp from './ReactApp';
 
-// Prepares the Angular app for mounting
+// Prepare the AngularJS app for mounting
 import '@/angular/app.module';
 
 // Setup the React DOM

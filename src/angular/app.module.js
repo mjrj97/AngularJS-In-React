@@ -2,10 +2,10 @@ import angular from 'angular';
 
 angular.module('app', []);
 
-await import('./app.controller');
+import('./app.controller');
 
 export function mountAngular(id) {
-  angular.element(function () {
+  angular.element(document.getElementById(id)).ready(function () {
     angular.bootstrap(document.getElementById(id), ['app'], {
       strictDi: true,
     });
