@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { mountAngular } from '@/app.module.js';
+import { mountAngular } from '@/angular/app.module.js';
 
 function AngularApp() {
   const id = 'angularApp';

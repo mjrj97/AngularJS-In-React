@@ -1,10 +1,8 @@
 import angular from 'angular';
 
-export async function prepareAngular() {
-  angular.module('app', []);
+angular.module('app', []);
 
-  await import('@/app.controller');
-}
+await import('./app.controller');
 
 export function mountAngular(id) {
   angular.element(function () {
