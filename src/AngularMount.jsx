@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import { mountAngular } from '@/angular/app.module.js';
+import { mountAngular } from '/angular/app.module.js';
 
-function AngularApp() {
+function AngularMount() {
   const id = 'angularApp';
 
   useEffect(() => {
@@ -15,4 +15,4 @@ function AngularApp() {
   );
 }
 
-export default AngularApp;
+export default AngularMount;
